@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form" id="signupForm" action="dashboard.html" onsubmit="return validateForm()">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="Avatar">
+            </div>
+            <h1>Create an Account</h1>
+            <input type="text" id="username" name="username" placeholder="Username" class="input-field">
+            <span id="usernameError" class="error"></span>
+
+            <input type="email" id="email" name="email" placeholder="Email" class="input-field">
+            <span id="emailError" class="error"></span>
+
+            <input type="password" id="password" name="password" placeholder="Password" class="input-field">
+            <span id="passwordError" class="error"></span>
+            <br>
+
+            <button type="submit" class="btn">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </form>
+    </div>
+    <script src="js/validate.js"></script>
+
+</body>
+</html>
